@@ -24,7 +24,7 @@ module.exports = {
 		liveReload: false,
 		historyApiFallback: true,
 		https: {
-			pfx: "C:/Users/Darren/.aspnet/https/aspnetapp.pfx",
+			pfx: path.join(process.env.USERPROFILE, ".aspnet/https/aspnetapp.pfx"),
 			passphrase: "Demo123!",
 		},
 	//	writeToDisk: true,
